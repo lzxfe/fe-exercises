@@ -1,0 +1,193 @@
+body {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: normal;
+	font: 12px arial;
+}
+.box{
+	min-width: 810px;
+    height: 100%;
+    min-height: 600px;
+}
+.baidu-hearder ul{
+	z-index: 2;
+	color: white;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 19px 0 5px;
+	padding: 0 96px 0 0;
+	
+}
+
+.baidu-hearder ul li{
+	display:inline;
+	
+}
+
+.baidu-hearder-ul a.mnav, .baidu-hearder-ul a.mnav:visited {
+	float: left;
+	color: #333;
+	font-weight: 700;
+	line-height: 24px;
+	margin-left: 20px;
+	font-size: 13px;
+	text-decoration: underline;
+}
+
+.baidu-hearder-ul a.lb, .baidu-hearder-ul a.lb:visited, .baidu-hearder-ul a.username {
+	display: inline-block;
+	float: left;
+	color: #333;
+	font-size: 13px;
+	line-height: 24px;
+	margin-left: 20px;
+	text-decoration: underline;
+}
+
+.baidu-hearder-ul a.pf, .baidu-hearder-ul a.pf:visited {
+	display: inline-block;
+	float: left;
+	color: #333;
+	line-height: 24px;
+	font-size: 13px;
+	margin-left: 20px;
+	overflow: hidden;
+	text-decoration: underline;
+}
+
+.baidu-hearder-ul a.bri, .baidu-hearder-ul a.bri:visited {
+	display: block;
+	position: absolute;
+	right: 10px;
+	width: 60px;
+	height: 23px;
+	float: left;
+	color: white;
+	background: #38F;
+	line-height: 24px;
+	font-size: 13px;
+	text-align: center;
+	overflow: hidden;
+	border-bottom: 1px solid #38F;
+	margin-left: 19px;
+	margin-right: 2px;
+	text-decoration:none;
+}
+
+.baidu-main{
+	text-align: center;
+    padding-top: 150px;
+	
+}
+
+.baidu-main-search{
+	position: relative;
+    margin-top: 20px;
+	
+}
+.baidu-main-search span{
+	position: relative;
+	
+}
+.baidu-main-search input[type=text]{
+	width: 530px;
+    height: 32px;
+    line-height: 27px;
+	outline:none;
+	padding-left:8px;
+	
+}
+.baidu-main-search input[type=button]{
+	background: #38f;
+    border: 1px solid #38f;
+    color: #fff;
+    margin-left: -6px;
+    height: 38px;
+    line-height: 29px;
+    width: 100px;
+    cursor: pointer;
+	
+}
+.baidu-main-search input[type=text]:focus{
+    border: 2px solid #38f;
+    border-color: #38f;
+
+	
+}
+
+.baudu-footer-code{
+	text-align: center;
+    margin-top: 354px;
+	
+}
+.baudu-footer-code span{
+	display: block;
+    color: #666;
+	font-weight: 700;
+}
+.setHomePage{
+	text-align: center;
+}
+.setHomePage li {
+    display: inline;
+    margin-left: 20px;
+}
+.setHomePage li>a {
+    color: #999;
+}
+.mustToRead{
+	text-align: center;
+	display: block;
+    
+}
+.mustToRead li {
+    color: #999;
+    display: inline;
+    margin-left: 35px;
+    position: relative;
+	
+}
+.mustToRead li>a {
+    color: #999;
+}
+
+#soutu-btn{
+	background: url(../images/camera.png) no-repeat 0 0;
+    z-index: 1;
+    position: absolute;
+    right: 109px;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    width: 18px;
+    cursor: pointer;
+	
+}
+#soutu-btn:hover{
+	background: url(../images/camera.png) no-repeat 0 0;
+	background-position: 0px -20px;
+}
+
+.code-foot-img1{
+	background: url(../images/icons_5859e57.png) no-repeat 0 0;
+	width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+	background-position: -600px -96px;
+	position: relative;
+    top: 3px;
+}
+
+.code-foot-img2{
+	background: url(../images/icons_5859e57.png) no-repeat 0 0;
+	width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+	background-position: -623px -96px;
+	position: relative;
+    top: 3px;
+}
+
