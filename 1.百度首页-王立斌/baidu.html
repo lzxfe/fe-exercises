@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +7,14 @@
     <title>百度一下，你就知道</title>
     <link rel="stylesheet" href="./css/baidu.css">
 </head>
-
+<!-- 批注: 浏览器会有默认的padding、margin值，为避免浏览器的默认样式造成干扰，一般会把页面中所有元素的padding、margin值均设为0 -->
 <body>
     <div class="box">
+        <!-- 批注：header, nav容器都没有高度。切图中一般不允许容器没有高度。此处不建议用absolute，可以用右浮动来让元素向右定位。-->
         <header>
-            <nav class="baidu-hearder">
-                <ul>
+            <!-- 批注: 当子元素设置浮动时，父元素注意需要清除浮动，否则会造成父元素高度塌陷 -->
+            <nav class="baidu-hearder clearfix">
+                <ul class="fr">
                     <li><a href="">新闻</a></li>
                     <li><a href="">hao123</a></li>
                     <li><a href="">地图</a></li>
@@ -22,14 +23,22 @@
                     <li><a href="">学术</a></li>
                     <li><a href="">登陆</a></li>
                     <li><a href="">设置</a></li>
-                    <li><a class="more-product" href="">更多产品</a></li>
+                    <!-- 批注: 针对最后一个按钮，这里不建议使用absolute，使用浮动即可，另：设置绝对定位之后，再设置float: left; 此时，浮动是不生效的-->
+                    <!-- 批注: 在写样式的时候，对于!important 慎用，会导致样式优先级太高，不容易进行覆盖，若要覆盖原本样式，可提高css优先级，提高优先级方法详见：https://segmentfault.com/a/1190000003860309 -->
+                    <li>
+                        <!-- 批注: 若要设置行内块元素的垂直居中，建议设置元素的height和line-height值相等（原本的样式两个值不相等）-->
+                        <!-- 批注: 对内联元素设置height和line-height是不生效的，若要生效，需要将内敛元素设置为行内块元素，使用display: inline-block;设置 -->
+                        <a class="more-product" href="">更多产品</a>
+                    </li>
                 </ul>
             </nav>
         </header>
+        <!-- 批注: 此处不建议对父元素直接设置高度，父元素的高度由内部子元素撑开即可 -->
         <main class="baidu-main">
             <img src="./images/bd_logo1.png" alt="" class="baidu-main-logo">
             <div class="baidu-main-search">
                 <input type="text">
+                <!-- 批注: 此处若想要添加相机的图片，则可以将input的padding-right值设置稍大，将此处的图片相对于<div class="baidu-main-search">父元素进行绝对定位， 放置于input的padding-right 范围中-->
                 <span></span>
                 <input type="button" value="百度一下">
             </div>
@@ -45,7 +54,8 @@
                 <li><a href="">About Baidu</a></li>
                 <li><a href="">百度推广</a></li>
             </ul>
-            <br>
+            <!-- 批注: <br>在此处是冗余的，因为ul为块级元素，默认就可以换行 -->
+            <!-- <br> -->
             <ul class="mustToRead">
                 <li>©2018 Baidu <a href=""> 使用百度前必读</a><a href="">意见反馈</a>京ICP证030173号<i></i></li>
                 <li><a href="">京公网安备11000002000001号</a><i></i></li>
