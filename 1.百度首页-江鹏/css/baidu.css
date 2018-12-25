@@ -1,77 +1,66 @@
+html,
 body {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: normal;
-	font: 12px arial;
+	height: 100%;
+	/* 批注: body 自带 margin: 8px; */
+	margin: 0;
 }
+
+body {
+    /* font-weight: normal; 冗余 */
+    /* font-size: 12px; 冗余 */
+    /* line-height: normal; 冗余 */
+	font: 12px arial; /* 这一行相当于：font-size:12px; font-family:arial; */
+}
+
+ul {
+	/* 批注: ul 自带 padding-left: 40px */
+	padding: 0;
+}
+
 .box{
 	min-width: 810px;
     height: 100%;
     min-height: 600px;
 }
-.baidu-hearder ul{
-	z-index: 2;
-	color: white;
-	position: absolute;
-	right: 0;
-	top: 0;
-	margin: 19px 0 5px;
-	padding: 0 96px 0 0;
-	
+/* 批注: 解读浮动闭合最佳方案: http://www.daqianduan.com/3606.html */
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	line-height: 0;
+	clear: both;
+	visibility: hidden;
 }
 
-.baidu-hearder ul li{
-	display:inline;
-	
+/* 批注: 用 .baidu-hearder-ul 替换 .baidu-hearder ul 。class选择器比标签选择器更高效。 */
+.baidu-hearder-ul {
+	float: right;
+	margin: 19px 10px 5px 0;
 }
 
-.baidu-hearder-ul a.mnav, .baidu-hearder-ul a.mnav:visited {
+.baidu-hearder ul li {
+	display:inline-block;
 	float: left;
-	color: #333;
+	margin-left: 20px;
 	font-weight: 700;
 	line-height: 24px;
-	margin-left: 20px;
 	font-size: 13px;
-	text-decoration: underline;
 }
 
-.baidu-hearder-ul a.lb, .baidu-hearder-ul a.lb:visited, .baidu-hearder-ul a.username {
-	display: inline-block;
-	float: left;
+.baidu-hearder ul li a {
 	color: #333;
-	font-size: 13px;
-	line-height: 24px;
-	margin-left: 20px;
 	text-decoration: underline;
 }
 
-.baidu-hearder-ul a.pf, .baidu-hearder-ul a.pf:visited {
+.baidu-hearder-ul .bri {
 	display: inline-block;
-	float: left;
-	color: #333;
-	line-height: 24px;
-	font-size: 13px;
-	margin-left: 20px;
-	overflow: hidden;
-	text-decoration: underline;
-}
-
-.baidu-hearder-ul a.bri, .baidu-hearder-ul a.bri:visited {
-	display: block;
-	position: absolute;
-	right: 10px;
 	width: 60px;
-	height: 23px;
-	float: left;
+	/* 批注：height和line-height一致，可让元素垂直居中。 */
+	height: 24px;
+	line-height: 24px;
 	color: white;
 	background: #38F;
-	line-height: 24px;
-	font-size: 13px;
 	text-align: center;
-	overflow: hidden;
-	border-bottom: 1px solid #38F;
-	margin-left: 19px;
-	margin-right: 2px;
 	text-decoration:none;
 }
 
@@ -81,19 +70,21 @@ body {
 	
 }
 
-.baidu-main-search{
+.baidu-main-search {
 	position: relative;
     margin-top: 20px;
 	
 }
 .baidu-main-search span{
 	position: relative;
+	/* 批注：inline元素不能自适应高度，会导致容器的内容溢出。 */
+	display: inline-block;
 	
 }
 .baidu-main-search input[type=text]{
 	width: 530px;
     height: 32px;
-    line-height: 27px;
+    line-height: 32px;
 	outline:none;
 	padding-left:8px;
 	
@@ -113,7 +104,7 @@ body {
     border: 2px solid #38f;
     border-color: #38f;
 
-	
+
 }
 
 .baudu-footer-code{

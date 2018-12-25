@@ -10,10 +10,13 @@
 </head>
 
 <body>
+    <!-- 批注: 因为 .box 的父级元素没有设置高度，所以 height:100% 不会起作用。解决：给 html,body 设置一个高度。-->
     <div class="box">
+        <!-- 批注：header, nav容器都没有高度。切图中一般不允许容器没有高度。此处不建议用absolute，可以用右浮动来让元素向右定位。-->
         <header>
-            <nav class="baidu-hearder">
+            <nav class="baidu-hearder clearfix">
                 <ul class="baidu-hearder-ul">
+                    <!-- 批注：建议让li浮动，把样式设置在li容器上 -->
                     <li><a href="" class="mnav">新闻</a></li>
                     <li><a href="" class="mnav">hao123</a></li>
                     <li><a href="" class="mnav">地图</a></li>
