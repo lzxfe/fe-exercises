@@ -1,3 +1,14 @@
+html,
+body {
+    height: 100%;
+    /* 批注: body 自带 margin: 8px; */
+    margin: 0;
+}
+
+body {
+    font: 12px arial; /* 设置全局字体 */
+}
+
 .box {
 	min-height: 600px;
     height: 100%;
@@ -6,10 +17,11 @@
 }
 .baidu-hearder {
 	position: absolute;
-	font-size: 13px
+	font-size: 13px;
 	top: 0;
     right: 40px;
-	width: 600px;
+    /*批注: 宽度不用写死*/
+	/*width: 600px; 冗余*/
 	text-align: right;
     color: #999;
 }
@@ -37,16 +49,17 @@
 .baidu-main {
     position: relative;
     width: 100%;
-    height: 100%;
+    /*height: 100%; 冗余*/
     top: 150px;
     min-height: 550px;
-    margin: 0px auto;
-    text-align: left;
-    overflow: hidden;
-    float: left;
+    /*margin: 0px auto; 冗余*/
+    /*text-align: left; 冗余*/
+    /*overflow: hidden; 冗余*/
+    /*批注: 不需要浮动*/
+    /*float: left; 冗余*/
 }
 .baidu-main-logo {
-	position: relative;
+	/*position: relative; 冗余*/
     width: 270px;
     height: 129px;
     margin: 0 auto 24px auto;
@@ -69,20 +82,22 @@
     border: 1px solid #b8b8b8;
     border-bottom: 1px solid #ccc;
     border-right: 0;
-    vertical-align: top;
-    outline: none;
-    box-shadow: none;
+    /*vertical-align: top; 冗余*/
+    /*outline: none; 冗余*/
+    /*box-shadow: none; 冗余*/
 }
 
 .soutu-btn {
-	z-index: 1;
+    /*批注: 不需要设置层级*/
+	/*z-index: 1; 冗余*/
     position: absolute;
 	right: 115px;
 	top: 10px;
     height: 16px;
     width: 18px;
     background: #fff url(../images/camera.png) no-repeat;
-    background-image: -webkit-image-set(url(../images/camera.png) 1x,url(../images/camera.png) 2x);
+    /* 批注： -webkit-image-set可以根据用户设备的分辨率匹配合适的图像，用于移动端居多*/
+    /*background-image: -webkit-image-set(url(../images/camera.png) 1x,url(../images/camera.png) 2x);*/
 	cursor: pointer;
 }
 
@@ -102,23 +117,23 @@
 }
 .baudu-footer {
 	position: relative;
-	float: left;
+	/*float: left; 冗余*/
 	top: 150px;
     color: #999;
-    font-size: 12px;
-    width: 100%;
+    /*font-size: 12px; 冗余*/
+    /*width: 100%; 冗余*/
     height: 160px;
     margin: 0 auto;
 }
 
 .baudu-footer-code {
-	position: relative;
-	float: left;
-    color: #999;
-    font-size: 12px;
-    width: 100%;
+    /*position: relative; 冗余*/
+    /*float: left; 冗余*/
+    /*color: #999; 冗余*/
+    /*font-size: 12px; 冗余*/
+    /*width: 100%; 冗余*/
     height: 100px;
-    margin: 0 auto;
+    /*margin: 0 auto; 冗余*/
 }
 
 .baudu-footer-code span{
@@ -143,9 +158,9 @@
 	color: #999;
 }
 .setHomePage, .mustToRead {
-	width: 98%;
+	/*width: 98%; 冗余*/
 	height: 22px;
-	float: left;
+	/*float: left; 冗余*/
 	margin: 0 auto;
 	line-height: 22px;
 	text-align: center;
