@@ -15,21 +15,21 @@ html, body {
     clear: both;
     visibility: hidden;
 }
-/* 可以把常用的样式单独写为一个class，方便后续复用 */
+/* 批注: 可以把常用的样式单独写为一个class，方便后续复用 */
 .fr {
     float: right;
 }
 .fl {
     float: left;
 }
-/* 此处的样式产生的效果是：清空input框获得焦点时的样式，浏览器的默认样式 */
+/* 批注: 此处的样式产生的效果是：清空input框获得焦点时的样式，浏览器的默认样式 */
 input:focus, textarea:focus, select:focus {
     outline-offset: 0;
 }
 :focus {
     outline: -webkit-focus-ring-color auto 0;
 }
-/* 自定义input框获得焦点时的样式 */
+/* 批注: 自定义input框获得焦点时的样式 */
 .baidu-main-search input[type=text]:focus {
     border: 1px solid #38f;
     border-color: #38f;
@@ -67,7 +67,7 @@ input:focus, textarea:focus, select:focus {
 }
 .baidu-main {
     text-align: center;
-    /* 样式是冗余的，默认为100% */
+    /* 批注: 样式是冗余的，默认为100% */
     /* width: 100%; */
     padding: 100px 0 300px;
 }
@@ -78,11 +78,11 @@ input:focus, textarea:focus, select:focus {
 }
 .baudu-footer {
     text-align: center;
-    /* 样式是冗余的，默认为100% */
+    /* 批注: 样式是冗余的，默认为100% */
     /* width: 100%; */
 }
 .baudu-footer-code {
-    /* display: block;这个样式是冗余的，对于div而言，默认display即为block */
+    /* 批注: display: block;这个样式是冗余的，对于div而言，默认display即为block */
     /* display: block; */
     margin-bottom: 15px;
 }
@@ -95,7 +95,7 @@ input:focus, textarea:focus, select:focus {
 .baudu-footer ul li {
     color: #999;
     font: 12px arial;
-    /* 保证所有li在同一行，不会换行 */
+    /* 批注: 保证所有li在同一行，不会换行 */
     display: inline-block; 
 }
 .baudu-footer ul a {
@@ -103,13 +103,13 @@ input:focus, textarea:focus, select:focus {
     font: 12px arial; 
 }
 .setHomePage, .mustToRead {
-    /* 此处不建议使用flex布局 */
+    /* 批注: 此处不建议使用flex布局 */
     /* display: flex; */
     /* justify-content: center; */
     margin-bottom: 10px;
 }  
 .mustToRead {
-    /* 此处不建议使用flex布局 */
+    /* 批注: 此处不建议使用flex布局 */
     /* display: flex; */
     /* justify-content: center; */
 }
@@ -124,15 +124,15 @@ input:focus, textarea:focus, select:focus {
 }
 .baidu-main-search input[type=text]{
     border: 1px solid #b6b6b6;
-    /* 冗余，不需要设置 */
+    /* 批注: 冗余，不需要设置 */
     /* background: #fff; */
-    /* input的display默认为inline-block，此处不需要设置 */
+    /* 批注: input的display默认为inline-block，此处不需要设置 */
     /* display: inline-block; */ 
     vertical-align: top;
     width: 500px;
     height: 20px;
     padding: 9px 7px;
-    /* 上边已经有一个border样式，第三个参数即为border的颜色，不明白此处为什么需要再设置一次 */
+    /* 批注: 上边已经有一个border样式，第三个参数即为border的颜色，不明白此处为什么需要再设置一次 */
     /* border-color: #b8b8b8 #ccc #ccc #b8b8b8; */
     overflow: hidden;
     }
@@ -143,9 +143,9 @@ input:focus, textarea:focus, select:focus {
     font-size: 15px;
     letter-spacing: 1px;
     background: #3385ff;
-    /* 增加这个样式，是为了使按钮和input框紧贴在一起 */
+    /* 批注: 增加这个样式，是为了使按钮和input框紧贴在一起 */
     margin-left: -7px;
-    /* 增加这个样式，鼠标悬浮上去，变为小手，表示可点击 */
+    /* 批注: 增加这个样式，鼠标悬浮上去，变为小手，表示可点击 */
     cursor: pointer;
 }
 input {
