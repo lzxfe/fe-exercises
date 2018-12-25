@@ -1,105 +1,154 @@
-    .baidu-hearder{  
-        color:#fff;
-        position:absolute;
-        right:0;
-        top:0;
-        padding:0 70px 0 0;
+/* 批注: 浏览器会有默认的padding、margin值，为避免浏览器的默认样式造成干扰，一般会把页面中所有元素的padding、margin值均设为0 */
+html * {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+/* 批注: 解读浮动闭合最佳方案: http://www.daqianduan.com/3606.html */
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/* 批注: 可以把常用的样式单独写为一个class，方便后续复用 */
+.fr {
+    float: right;
+}
+.fl {
+    float: left;
+}
+/* 批注: 此处的样式产生的效果是：清空input框获得焦点时的样式，浏览器的默认样式 */
+input:focus, textarea:focus, select:focus {
+    outline-offset: 0;
+}
+:focus {
+    outline: -webkit-focus-ring-color auto 0;
+}
+/* 批注: 自定义input框获得焦点时的样式 */
+.baidu-main-search input[type=text]:focus {
+    border: 1px solid #38f;
+    border-color: #38f;
+}
+.baidu-hearder{  
+    color:#fff;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+.baidu-hearder ul li {
+    list-style: none;
+    float: left;
+    line-height: 24px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+.baidu-hearder ul li:last-child {
+    text-decoration: none;
+}
+.baidu-hearder ul > li > a {
+    color: #333;
+    font-weight: 700;
+    font-size: 13px;
+}
+.baidu-hearder ul > li > a.more-product {
+    width: 60px;
+    height: 24px;
+    display: inline-block;
+    color: #fff;
+    background: #3385ff;
+    line-height: 24px;
+    text-align: center;
+    border-bottom: 1px solid #38f;
+    text-decoration: none;
+}
+.baidu-main {
+    text-align: center;
+    /* 批注: 样式是冗余的，默认为100% */
+    /* width: 100%; */
+    padding: 100px 0 300px;
+}
+.baidu-main-logo{
+    width: 270px;
+    height: 129px;
+    margin-top: 30px;
+}
+.baudu-footer {
+    text-align: center;
+    /* 批注: 样式是冗余的，默认为100% */
+    /* width: 100%; */
+}
+.baudu-footer-code {
+    /* 批注: display: block;这个样式是冗余的，对于div而言，默认display即为block */
+    /* display: block; */
+    margin-bottom: 15px;
+}
+.baudu-footer-code span {
+    display: block;
+    font: 12px arial;
+    color: #666;
+    font-weight: 700;
+}
+.baudu-footer ul li {
+    color: #999;
+    font: 12px arial;
+    /* 批注: 保证所有li在同一行，不会换行 */
+    display: inline-block; 
+}
+.baudu-footer ul a {
+    color: #999;
+    font: 12px arial; 
+}
+.setHomePage, .mustToRead {
+    /* 批注: 此处不建议使用flex布局 */
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-bottom: 10px;
+}  
+.mustToRead {
+    /* 批注: 此处不建议使用flex布局 */
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.baudu-footer li {
+    list-style: none;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.mustToRead a {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.baidu-main-search input[type=text]{
+    border: 1px solid #b6b6b6;
+    /* 批注: 冗余，不需要设置 */
+    /* background: #fff; */
+    /* 批注: input的display默认为inline-block，此处不需要设置 */
+    /* display: inline-block; */ 
+    vertical-align: top;
+    width: 500px;
+    height: 20px;
+    padding: 9px 7px;
+    /* 批注: 上边已经有一个border样式，第三个参数即为border的颜色，不明白此处为什么需要再设置一次 */
+    /* border-color: #b8b8b8 #ccc #ccc #b8b8b8; */
+    overflow: hidden;
     }
-    .baidu-hearder ul li{
-        list-style: none;
-        float: left;
-        line-height: 24px;
-        margin-left: 20px;
-        text-decoration:underline;
-    }
-    .baidu-hearder ul>li>a{
-        color: #333;
-        font-weight: 700;
-        font-size: 13px;
-    }
-    .more-product{
-        position: absolute;
-        right: 10px;
-        width: 60px;
-        height: 23px;
-        float: left;
-        color: #fff !important;
-        background: #3385ff;
-        line-height: 24px;
-        text-align: center;
-        border-bottom: 1px solid #38f;
-        margin-left: 19px;
-        text-decoration: none;
-    }
-    .baidu-main{
-        text-align: center;
-        width: 100%;
-        height: 400px;
-        padding-top: 100px;
-    }
-    .baidu-main-logo{
-        width: 270px;
-        height: 129px;
-        margin-top: 30px;
-    }
-    .baudu-footer{
-        text-align: center;
-        width: 100%;
-    }
-    .baudu-footer-code{
-        display: block;
-    }
-    .baudu-footer-code span{
-        display:block;
-        font: 12px arial;
-        color: #666;
-        font-weight: 700;
-    }
-    .baudu-footer ul li{
-        color: #999;
-        font: 12px arial; 
-    }
-    .baudu-footer ul a{
-        color: #999;
-        font: 12px arial; 
-    }
-    .setHomePage{
-        display: flex;
-        justify-content: center;
-        margin-bottom: -30px;
-    }    
-    .mustToRead{
-        display: flex;
-        justify-content: center;
-    }
-    .baudu-footer li{
-        list-style: none;
-        margin-left: 20px;
-        text-decoration: none;
-    }
-    .mustToRead a{
-        margin-left: 3px;
-        margin-right: 3px;
-    }
-    .baidu-main-search input[type=text]{
-        border: 1px solid #b6b6b6;
-        background: #fff;
-        display: inline-block;
-        vertical-align: top;
-        width: 539px;
-        height: 34px;
-        border-color: #b8b8b8 #ccc #ccc #b8b8b8;
-        overflow: hidden;
-    }
-    .baidu-main-search input[type=button]{
-        width: 100px;
-        height: 36px;
-        color: #fff;
-        font-size: 15px;
-        letter-spacing: 1px;
-        background: #3385ff;
-    }
-    input {
-        border: 0;
-        padding: 0;
-    }
+.baidu-main-search input[type=button]{
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    /* 批注: 增加这个样式，是为了使按钮和input框紧贴在一起 */
+    margin-left: -7px;
+    /* 批注: 增加这个样式，鼠标悬浮上去，变为小手，表示可点击 */
+    cursor: pointer;
+}
+input {
+    border: 0;
+    padding: 0;
+}
