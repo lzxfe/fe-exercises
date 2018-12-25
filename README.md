@@ -22,8 +22,8 @@
 #### 作业1：切一个百度首页
 
 提交者：
-江鹏 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/1c47bc0d382bc6c98f60ebe4f352b8cb80f65156); 
-王立斌;
+江鹏 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/1c47bc0d382bc6c98f60ebe4f352b8cb80f65156?diff=split); 
+王立斌 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/a68c0b614e0bf7fd19ee0c388cf2492858273493?diff=split);
 王现玉;
 风鹏涛;
 
