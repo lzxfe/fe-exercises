@@ -1,38 +1,72 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-size: 12px;
     font: 12px arial;
 }
-.top{
-float:right;
-margin-top: 15px;
+/* 批注: 格式化浏览器默认样式 */
+:focus {
+    outline: -webkit-focus-ring-color auto 0;
 }
-.top ul{
-    margin-right: 100px;
+input:focus, textarea:focus, select:focus {
+    outline-offset: 0;
 }
-.top li{
-    list-style-type:none;  
+html, body {
+    height: 100%;
+}
+/* 批注: 解读浮动闭合最佳方案: http://www.daqianduan.com/3606.html */
+.clearfix:after {
+    content: "";
     display: block;
-    float: left;
-    margin-left: 10px;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
 }
-.top li a{
+.fr {
+    float: right;
+}
+.fl {
     float: left;
+}
+.top {
+    /* 批注: 此处不需要浮动 */
+    /* float: right; */
+    /* margin-top: 15px; */
+}
+.top ul {
+    margin-right: 20px;
+    margin-top: 15px;
+}
+.top li {
+    list-style-type: none; 
+    /* 批注: 此处将display设置为 inline-block, 即可实现li在同一行显示的效果 */
+    display: inline-block;
+    /* 批注: 此处的样式冗余，没必要设置浮动 */
+    /* float: left; */
+    margin-left: 25px;
+}
+.top li a {
+    /* 批注: 此处的样式冗余，没必要设置浮动 */ 
+    /* float: left; */
     color: #333;
     font-weight: 700;
     line-height: 24px;
-    margin-left: 20px;
+    /* 批注: 此处的样式冗余 */ 
+    /* margin-left: 20px; */
     font-size: 13px;
     text-decoration: underline;
-
+    /* 批注: 若想要line-height生效，则需要将内联元素设置为行内块元素 */ 
+    display: inline-block;
 }
-.top .more{
-    position: absolute;
-    right: 10px;
-    width: 60px;
+.top .more {
+    /* 批注: 绝对定位和浮动同时使用的时候，浮动不生效 */ 
+    /* position: absolute; */
+    /* right: 10px; */
+    /* width: 60px; */
     height: 23px;
-    float: left;
+    /* 批注: 此处的样式冗余 */ 
+    /* float: left; */
     color: #fff;
     background: #38f;
     line-height: 24px;
@@ -40,9 +74,12 @@ margin-top: 15px;
     text-align: center;
     overflow: hidden;
     border-bottom: 1px solid #38f;
-    margin-left: 19px;
-    margin-right: 2px;
-
+    margin-left: 10px;
+    margin-right: 20px;
+    /* 批注: 下边为添加的样式，为了好看 */ 
+    text-decoration: none;
+    padding: 0 5px;
+    margin-top: 15px;
 }
 /* 对元素容器定位：absolute*/
 /*
@@ -67,14 +104,14 @@ margin-top: 15px;
     align-items: center;
 
 } */
-.middle{
+.middle {
+    /* 批注: 此处不建议使用绝对定位，这样会使元素脱离文档流 */ 
     text-align: center;
-    position: absolute;
+    /* position: absolute;
     top:30%;
     left:0;
-    right: 0;
-    transform: translateY(-50%)
-
+    right: 0; 
+    transform: translateY(-50%); */
 }
 
 /* 对元素本身定位 */
@@ -90,57 +127,79 @@ margin-top: 15px;
     margin:auto;
 }
 */
-.inpt-span{
+.inpt-span {
     /* border: 1px solid #b6b6b6; */
-    border-color: #7b7b7b #b6b6b6 #b6b6b6 #7b7b7b;
-    background: #fff;
+    /* 批注: 样式冗余 */ 
+    /* border-color: #7b7b7b #b6b6b6 #b6b6b6 #7b7b7b;
+    background: #fff; */
     display: inline-block;
-    vertical-align: top;
-    width: 539px;
-    margin-right: 0;
+    /* 批注: 样式冗余 */ 
+    /* vertical-align: top; */
+    /* 批注: 样式冗余，在input元素上定义border即可 */ 
+    /* border: 1px solid #b6b6b6; */
+    /* 批注: 此处不建议设置宽度，由内部子元素撑开即可 */ 
+    /* width: 539px; */
+    /* 批注: 样式冗余 */ 
+    /* margin-right: 0; */
     /* border-right-width: 0; */
     /* border-color: #b8b8b8 transparent #ccc #b8b8b8; */
-    overflow: hidden;
-    height: 38px;
+    /* 批注: 样式冗余 */ 
+    /* overflow: hidden; */
+    /* 批注: 此处不建议设置高度，由内部子元素撑开即可 */ 
+    /* height: 38px; */
     position: relative;
 }
-.inpt{
-    height: 34px;
-    width: 539px;
+.inpt {
+    height: 30px;
+    width: 485px;
     /* border-color: #7b7b7b #b6b6b6 #b6b6b6 #7b7b7b; */
-    line-height: 34px;
-
+    line-height: 30px;
+    border: 1px solid #b6b6b6;
+    /* 批注: 此处建议添加padding值，尤其是右侧的padding值，效果：输入的字符不能与图标重叠 */ 
+    padding: 2px 40px 2px 10px;
+}
+.inpt:focus {
+    border: 1px solid #2d78f4;
 }
 .inpt-btn{
     background-image:  url(camera_new_5606e8f.png) no-repeat;
 }
 .inpt-submit{
     width: 100px;
-    height: 37px;
+    height: 36px;
     color: #fff;
     font-size: 15px;
     letter-spacing: 1px;
     background: #3385ff;
-    border-bottom: 1px solid #2d78f4;
+    border: 1px solid #2d78f4;
     outline: medium;
-    *border-bottom: 0;
+    /* 批注: 样式冗余 */
+    /* border-bottom: 0; */
     -webkit-appearance: none;
     -webkit-border-radius: 0;
-    margin-left: -7px;
+    margin-left: -4px;
+    /* 批注: 下边为添加的样式，为了好看 */ 
+    top: 2px;
+    position: relative;
+    cursor: pointer;
 }
 .middle-span{
     margin-top: 10px;
 }
+/* 批注: 此处的样式是为了保证在不同屏幕大小的情况下，显示相同的效果 */
+.middle {
+    margin: 5% auto 17%;
+}
 
 
-
-.bottom{
+.bottom {
+    /* 批注: 此处不建议使用绝对定位，这样会使元素脱离文档流 */ 
     text-align: center;
-    position: absolute;
+    /* position: absolute;
     top:85%;
     left:0;
     right: 0;
-    transform: translateY(-50%)
+    transform: translateY(-50%) */
 }
 
 
