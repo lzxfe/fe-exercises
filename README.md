@@ -21,10 +21,10 @@
 
 #### 作业2：切一个github的explore页面
 
-作业要求：
-1. 样式参照[github explore页面](https://github.com/explore)
-2. 使用flex布局 
-3. 页面动效可自由发挥
+> 作业要求：
+> 1. 样式参照[github explore页面](https://github.com/explore)
+> 2. 使用flex布局 
+> 3. 页面动效可自由发挥
 
 
 提交者：
