@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <div>
+    <!-- <div> 变成 <div class="container"> 便于后期开发 -->
+    <div class="container">
         <header>
             <nav class="baidu-hearder clearfix">
                 <ul>
@@ -30,16 +31,20 @@
             <img src="./bd_logo1.png" alt="" class="baidu-main-logo">
             <div class="baidu-main-search">
 				<span class="baidu-main-search-span">
-                <input type="text">
+                <!-- <input type="text">  修改为 <input type="text" class="baidu-input-text"> -->
+                <input type="text" class="baidu-input-text">
                 <span class="baidu-main-search-icon"></span>
-				</span>
-                <input type="button" value="百度一下">
+                </span>
+                
+                <input type="button" class="baidu-input-button" value="百度一下">
             </div>
         </main>
         <footer class="baudu-footer">
             <div class="baudu-footer-code">
-				<span class="baudu-footer-code-zbios"></span>
-                <div>百度</div>
+                <span class="baudu-footer-code-zbios"></span>
+                <!-- 语义化 修改为 <span class="baidu-title">百度</span>-->
+                <span class="baidu-title">百度</span>
+                <!-- <div>百度</div> -->
             </div>
             <ul class="setHomePage">
                 <li><a href="">把百度设置为主页</a></li>
