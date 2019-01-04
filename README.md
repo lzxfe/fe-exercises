@@ -21,8 +21,6 @@
 
 #### 作业2：切一个github的explore页面
 
-提交者：
-林强 江鹏 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/d71b95340488b93c7f45613cdb215df698797b3f?diff=split);
 
 > 作业要求：
 > 1. 样式参照[github explore页面](https://github.com/explore)
@@ -32,6 +30,7 @@
 
 提交者：
 凤鹏涛; 王现玉; 王立斌; 江鹏; 荣贝贝; 王江涛; 孔博阳; 张开良; 林强; 王文军;
+林强 江鹏 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/d71b95340488b93c7f45613cdb215df698797b3f?diff=split);
 
 <br/>
 
