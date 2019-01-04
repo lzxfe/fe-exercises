@@ -21,6 +21,9 @@
 
 #### 作业2：切一个github的explore页面
 
+提交者：
+林强 江鹏 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/d71b95340488b93c7f45613cdb215df698797b3f?diff=split);
+
 > 作业要求：
 > 1. 样式参照[github explore页面](https://github.com/explore)
 > 2. 使用flex布局 
