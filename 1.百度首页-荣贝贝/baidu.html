@@ -13,7 +13,8 @@
     <div class="box">
         <header>
             <nav class="baidu-hearder">
-                <ul id="u1" class="top-title">
+                <!-- 修改为id="ul" 去掉，尽量不用id，后台来用 -->
+                <ul class="top-title">
                     <li><a href="">新闻</a></li>
                     <li><a href="">hao123</a></li>
                     <li><a href="">地图</a></li>
@@ -26,17 +27,19 @@
                 </ul>
             </nav>
         </header>
-        <main class="baidu-main">
+        <!-- 修改为 main 修改为section标签 -->
+        <section class="baidu-main">
             <img src="./images/bd_logo1.png" alt="" class="baidu-main-logo">
-            <div style="margin: 20px 0;" class="baidu-main-search">
+            <div class="baidu-main-search">
                 <input class="input-text" type="text">
-                <span></span>
                 <input class="input-button" type="button" value="百度一下">
             </div>
-        </main>
+        </section>
         <footer class="baudu-footer">
-            <img style="width:50px;height:50px" src="./images/code.png">
-			<div class="qrcode-img"></div>
+            <!-- 修改为 -->
+            <div class="qrcode-main">
+                <img class="qrcode-img" src="./images/code.png" />
+			    <!-- <div class="qrcode-img"></div> -->
                 <span>百度</span>
             </div>
             <ul class="setHomePage">
