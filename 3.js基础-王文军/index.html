@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+    <title>王文军的作业-explore</title>
+    <script type="text/javascript" src="./JS/index.js"></script>
+</head>
+
+<body>
+	<div>
+		<h1>第一题</h1>
+		<input type="button" value="生成随机码" onclick="produceRandom()" />
+		<span id="firstProject"></span>
+	</div>
+	<div>
+		<h1>第二题</h1>
+		<input type="button" value="改变颜色" onclick="changeColor()" />
+		<ul id="changeColor">
+			<li>这是第0行</li>
+			<li>这是第1行</li>
+			<li>这是第2行</li>
+			<li>这是第3行</li>
+			<li>这是第4行</li>
+			<li>这是第5行</li>
+			<li>这是第6行</li>
+		</ul>
+	</div>
+	<div>
+		<h1>第三题</h1>
+		<h2>对数组1 2 2 3 5 8 3 5 去重</h2>
+		<input type="button" value="去重1" onclick="duplicateRemoval1()" />
+		<input type="button" value="去重2" onclick="duplicateRemoval2()" />
+		<input type="button" value="去重3" onclick="duplicateRemoval3()" />
+	</div>
+	<div>
+		<h1>第四题</h1>
+		<p>1.两处输出值为1和undefined。第一处getCount的调用者为User，所以this指向User，而User的count为1，故输出1.
+		第二处定义了一个引用指向getCount，此时直接调用引用等同于直接调用getCount，因为没有显式指明调用者，
+		所以调用者默认为全局对象window，所以this指向window，而window未定义count，故输出undefined</p>
+		<p>2.输出值为10，2。obj.method调用时，首先执行第一句fn(),这里根据作用链可以访问函数fn，所以直接调用fn，
+		因为没有显式指明调用者，所以调用者默认为全局对象window，故this指向window，输出window定义的length：10。
+		执行第二句arguments[0]()时，arguments是一个对象，即obj的method函数的参数列表，obj.method(fn,1)分别将fn函数和number 1指向
+		arguments这个数组对象的前两个元素，即它的第一个元素其实是指向函数method的一个引用。arguments[0]()即访问arguments的第一个元素，
+		相当于arguments“调用”了它的第一个元素，即fn函数，所以this指向arguments，此时arguments的length属性为其自带的length，即它的长度：2</p>
+	</div>
+</body>
+
+</html>
