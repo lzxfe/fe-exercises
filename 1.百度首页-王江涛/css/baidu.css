@@ -1,3 +1,5 @@
+/* 新加的 把默认input textarea的focus效果去掉 */
+:focus{outline:0;}
 body{
 	height:100%;
 }
@@ -40,6 +42,8 @@ margin-top:180px;
 .baidu-main-search {
 font-size:0px;
 }
+/* 修改 用.btn 就可以 */
+/* 
 .baidu-main-search input[type=button]{
 	margin: 0;
 	padding: 0;
@@ -57,7 +61,7 @@ font-size:0px;
     color: white;
     box-shadow: none;
     font-weight: normal;
-}
+} */
 .baudu-footer-code span{
  	display: block;
      color: #666;
@@ -80,24 +84,29 @@ padding-inline-start: 0px;
 #baidu-title {
     padding-bottom: 100px;
     text-align: center;
-}
-div {
-    display: block;
-}
-#baidu-title{
     float: left;
 	width:100%;
 }
-
+/* 修改 div 本身是块模式 不需要定义 */
+/* div {
+    display: block;
+} */
+/* 修改 样式整合到一起 */
+/* #baidu-title{
+    float: left;
+	width:100%;
+} */
+/* 修改 margin padding距离 */
 #title{
     color: #fff;
     position: absolute;
-    right: 0;
-    top: 0;
-    margin: 19px 0 5px;
-    padding: 0 96px 0 0;
-	}
-#title a.mnav{
+    right: 20px;
+    top: 10px;
+    /* margin: 19px 0 5px;
+    padding: 0 96px 0 0; */
+    }
+/* 修改 #title a.mnav 修改为 #title .mnav*/
+#title .mnav{
     float: left;
     color: #333;
     font-weight: 700;
@@ -105,10 +114,11 @@ div {
     margin-left: 20px;
     font-size: 13px;
     text-decoration: underline;
-	}
-#aaa{
-    position: absolute;
-    right: 10px;
+    }
+/* 修改 语义化 #aaa修改为.more-product */
+.more-product{
+    /* position: absolute;
+    right: 10px; */
     width: 60px;
     height: 23px;
     color: #fff;
@@ -120,49 +130,60 @@ div {
     margin-left: 19px;
     margin-right: 2px;
 }
+/* 修改为 */
 .baidu-main{
 	position: relative;
-    height: 38.2%;
-    min-height: 293px;
-    width: 1000px;
+    /* height: 38.2%; */
+    /* min-height: 293px; */
+    /* width: 1000px; */
     margin: 0 auto;
+    top:100px;
     text-align: center;
     padding-bottom: 370px;
 
 }
+/* 修改为 */
 .btn{
     cursor: pointer;
     width: 102px;
-    height: 38px;
-    line-height: 38px;
+    height: 40px;
+    /* line-height: 38px; */
     padding: 0;
     border: 0;
-    background: none;
+    /* background: none; */
     background-color: #38f;
     font-size: 16px;
     color: white;
-    box-shadow: none;
-    font-weight: normal;
+    /* box-shadow: none;
+    font-weight: normal; */
 }
+/* 修改为 */
 #input-id{
 position: relative;
     width: 500px;
     width: 526px;
     height: 22px;
-    font: 16px/18px arial;
-    line-height: 22px;
-    margin: 6px 0 0 7px;
+    /* font: 16px/18px arial; */
+    /* line-height: 22px; */
+    /* margin: 6px 0 0 7px; */
+    font-size:14px;
     padding: 0;
-    background: transparent;
+    background: none;
     border: 0;
     outline: 0;
     -webkit-appearance: none;
 }
+.baidu-main-logo {
+    width: 270px;
+    height: 129px;
+}
+/* 修改为 */
 .main-search{
 	width: 643px;
-    height: 100%;
-    min-height: 293px;
-    margin: 0 auto 0 auto;
+    /* height: 100%; */
+    /* min-height: 293px; */
+    /* margin: 0 auto 0 auto; */
+    margin:0 auto;
 }
 .baidu-main-search{
 	text-align: left;
@@ -186,22 +207,24 @@ position: relative;
 	font: 12px arial;
 	    color: #999;
 }
+/* 修改为 */
 .baudu-footer-code{
     height: 60px;
-    width: 100%;
+    /* width: 100%; */
 }
-.ulul {
+/* 修改为 */
+/* .ulul {
 	display:block;
 	margin:0;
 	padding:0;
 	overflow:hidden;
-}
-
+} */
+/* 修改为 */
 .ulul li {
- list-style: none;
-	margin:0;
+ /* list-style: none; */
+	/* margin:0; */
 	display:inline;
-	padding:0;
+	/* padding:0; */
 }
 
 .baudu-footer li a{
