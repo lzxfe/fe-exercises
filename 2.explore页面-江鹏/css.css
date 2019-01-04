@@ -1,16 +1,21 @@
 body {
 	margin: 0;
 }
-*{
+/* 新增加 */
+form,table,td,h1,h2,h3,h4,ul,ol,li,p{margin:0;padding:0;border:0;list-style:none}
+/* 修改为  建议少用 !important*/
+/* 修改为 建议不用* 设置样式 */
+
+/* *{
 	box-sizing: border-box;
-}
+} */
 .part-head{
 	margin-left: auto;
     margin-right: auto;
     max-width: 1280px;
 }
 .part-head-div{
-	display: flex!important;
+	display: flex;
 	margin-left: -8px;
     margin-right: -8px;
 	
@@ -56,7 +61,7 @@ body {
 }
 
 .class-p-left{
-	margin-bottom: 0!important;
+	margin-bottom: 0;
 }
 
 .class-h1-center{
@@ -67,7 +72,7 @@ body {
 }
 
 .class-p-center{
-	margin-bottom: 0!important;
+	margin-bottom: 0;
 	color:rgb(255, 255, 255);
 }
 
@@ -78,13 +83,13 @@ body {
 }
 
 .class-p-right{
-	margin-bottom: 0!important;
+	margin-bottom: 0;
 	color: #fff
 }
 
 .img-foot-div{
 	margin-top: 100px;
-	position: relative!important;
+	position: relative;
 }
 
 
@@ -103,7 +108,7 @@ body {
 .part-foot-ul{
 	padding-left: 0px;
 	display: flex;
-	overflow: auto!important;
+	overflow: auto;
 	
 }
 .part-foot-ul-li{
@@ -113,7 +118,7 @@ body {
     flex-shrink: 1;
     margin: 5px;
     height: 200px;
-	border: 1px solid #e1e4e8!important;
+	border: 1px solid #e1e4e8;
 	border-color:rgb(234, 236, 239);
 	border-radius:3px;
 	border-style:solid;
@@ -125,8 +130,8 @@ body {
 
 	margin-top: 0!important;
 	position: absolute!important;
-	padding-left: 16px!important;
-	padding-right: 16px!important;
+	padding-left: 16px;
+	padding-right: 16px;
 	background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
 }
 .content-ul{
@@ -137,13 +142,13 @@ body {
 	list-style-type:none;
 	color: #0366d6;
     text-decoration: none;
-	font-size: 16px!important;
+	font-size: 16px;
 	font-weight: 600;
 	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 }
 .content-li-two{
 	list-style-type:none;
-	color: #586069!important;
+	color: #586069;
     text-decoration: none;
 	font-weight: 600;
 	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;

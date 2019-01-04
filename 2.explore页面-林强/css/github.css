@@ -1,7 +1,8 @@
 body{
 
 }
-#part10 {
+/* 修改为 !important建议少用 */
+.bodd1 {
 	margin-top:20px;
 	background:black;
 	width:100%;
@@ -11,24 +12,31 @@ body{
 	align-items: center;
 	height: 350px;
 }
-#div1-1 {
+.container .box{
 	display: flex;
 	width:25%;
 	cursor:pointer;
 }
-#div1-3{
+.container .box:nth-child(2){
+	width:50%;
+}
+.container .box:nth-child(3){
+	margin-right:20px;
+	cursor:pointer;
+}
+/* #div1-3{
 	display: flex;
 	width:25%;
 	margin-right:20px;
 	cursor:pointer;
-}
-#div1-2 {
+} */
+/* #div1-2 {
 	display: flex;
 	width:50%;
 	cursor:pointer;
-}
+} */
 .width-fit {
-    max-width: 100%!important;
+    max-width: 100%;
     border-radius:3px;
 }
 .box {
@@ -43,17 +51,17 @@ body{
 	transform: scale(1.04,1.04);
 }
 #part2 {
-    padding-bottom: 40px!important;
-    padding-top: 40px!important;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 .part2-2 {
-    padding-left: 16px!important;
-    padding-right: 16px!important;
-	    overflow: auto!important;
+    padding-left: 16px;
+    padding-right: 16px;
+	    overflow: auto;
 }
 .d-sm-flex {
-	align-items: center!important;
-	justify-content: space-between!important;
+	align-items: center;
+	justify-content: space-between;
 }
 .container{    
 	margin-left: auto;
@@ -61,17 +69,17 @@ body{
     max-width: 1280px;
 }
 .d-flex {
-    display: flex!important;
+    display: flex;
 	flex-direction: row;
-    align-items: stretch!important;
+    align-items: stretch;
 
 }
 .art2{
 	margin-left:10px;
 	margin-right:10px;
-	justify-content: space-between!important;
-    align-items: flex-start!important;
-	border: 1px solid #e1e4e8!important;
+	justify-content: space-between;
+    align-items: flex-start;
+	border: 1px solid #e1e4e8;
 	min-width:300px;
 	height:200px;
 
