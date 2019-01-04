@@ -41,6 +41,9 @@
 凤鹏涛 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/ec621244e881bcb99034abc3bdb5600c7cc92c26?diff=split);
 王文军 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/0cd9f31cdc31cc873d0bb57615ac0cb2e99ba04f?diff=split);
 王江涛 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/ffa5145a57782987efef690ed1f6e38e19e66a2d?diff=split);
+荣贝贝 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/71b4e9a12a2d38cc7cb37b1a89f897ff3993fc75?diff=split);
+
+
 孔博阳; 张开良; 林强; 王江涛; 荣贝贝
 
 
