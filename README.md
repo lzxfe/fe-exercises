@@ -40,6 +40,7 @@
 王现玉 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/991fb248ec926e9c1ad0f4f203e0f9dae8ae2424?diff=split);
 凤鹏涛 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/ec621244e881bcb99034abc3bdb5600c7cc92c26?diff=split);
 王文军 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/0cd9f31cdc31cc873d0bb57615ac0cb2e99ba04f?diff=split);
+王江涛 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/ffa5145a57782987efef690ed1f6e38e19e66a2d?diff=split);
 孔博阳; 张开良; 林强; 王江涛; 荣贝贝
 
 
