@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js</title>
+</head>
+<script type="text/javascript">
+function code(){
+	var arr=[];
+	for(var i=0;i<10;i++){  
+		arr.push(i);//输出0-9
+	}
+	for(var i=0;i<26;i++){  
+		arr.push(String.fromCharCode(97+i));//输出a-z  26个小写字母  
+	}
+	for(var i=0;i<26;i++){  
+		arr.push(String.fromCharCode(65+i));//输出A-Z  26个大写字母
+	}  
+	var str='';
+	for(var i=0;i<4;i++){
+		str+=arr[Math.floor(Math.random()*62)]+' ';
+	}
+    document.getElementById('test_01').innerText = str;
+}
+function color(){
+	var arr1=['red','#84af9b','#379be9','#935A32'];
+	var arr2=['green','#f90','#bb4046','#390'];
+	var color1=arr1[Math.floor(Math.random()*4)];
+	var color2=arr2[Math.floor(Math.random()*4)];
+    var objArr= document.getElementsByTagName('li');
+	if(objArr){
+	  for(var i=0;i<objArr.length;i++){
+		  if(i%2==0){
+			  objArr[i].style.backgroundColor=color1;
+		  }else{
+			  objArr[i].style.backgroundColor=color2;
+		  }
+	  }
+	}
+}
+function removeRepEle01(){
+	var arr=['1','2','2','3','5','6'];
+	var arr2=[];
+	for(var i=0;i<arr.length;i++){
+		if(arr2.indexOf(arr[i])<0){//则包含该元素
+			arr2.push(arr[i]);
+		}
+	}
+	var str='';
+	for(var i=0;i<arr2.length;i++){
+		str+=arr2[i]+' ';
+	}
+	document.getElementById('arrValue01').innerText = str+"(用另一个数组替换原数组)";
+}
+function removeRepEle02(){
+	var arr=['1','2','2','3','5','6'];
+	var obj={};
+	var str='';
+	for(var i=0;i<arr.length;i++){
+		if(!obj[arr[i]]){
+			str+=arr[i]+' ';
+			obj[arr[i]]=arr[i];
+		}
+	}
+	document.getElementById('arrValue02').innerText = str+"(利用对象的属性不能相同的特点进行去重)";
+}
+
+function removeRepEle03(){
+	  var arr=['1','2','2','3','5','6'];
+	  var arr2 = arr.filter(function(element,index,self){
+	     return self.indexOf(element) === index;
+	  });
+	  var str='';
+	for(var i=0;i<arr2.length;i++){
+		str+=arr2[i]+' ';
+	}
+	document.getElementById('arrValue03').innerText = str+"(利用数组中的filter方法)";
+}
+function test401(){
+	var User={
+			count:1,
+			getCount:function(){
+				return this.count;
+			}
+	};
+	console.log(User.getCount());
+	var func=User.getCount;
+	console.log(func());
+}
+
+</script>
+<body>
+<h3>1、生成四位验证码，要求0-9,a-z,A-Z</h3><button onclick="code()">生成验证码</button>
+<span id="test_01"></span>
+<h3>2、js实现隔行换色 </h3><button onclick="color()">换色</button>
+<ul id="test_02" style="background-color: ">
+	<li>这是第0行</li>
+	<li>这是第1行</li>
+	<li>这是第2行</li>
+	<li>这是第3行</li>
+	<li>这是第4行</li>
+	<li>这是第5行</li>
+	<li>这是第6行</li>
+</ul>
+<h3>3、数组去重 </h3>
+<div>原数组['1','2','2','3','5','6']</div>
+<div><button onclick="removeRepEle01()">第一种</button><span id="arrValue01">用另一个数组替换原数组</span></div>
+<div><button onclick="removeRepEle02()">第二种</button><span id="arrValue02">利用对象的属性不能相同的特点进行去重</span></div>
+<div><button onclick="removeRepEle03()">第三种</button><span id="arrValue03"></span>利用数组中的filter方法</div>
+
+
+<h3>4、关于this </h3>
+<div>第一题：1(指向当前user对象)   undefined(指向window对象)</div>
+<div>第二题：10(这个应该就是window的对象的变量length值10)   2(方法的第一个参数的长度，第二个参数没用)</div>
+</body>
+</html>
