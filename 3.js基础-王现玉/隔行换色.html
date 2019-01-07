@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>隔行换色</title>
+	</head>
+	<body> 
+		<ol type="1" start="1"> 
+			<li>第一行</li> 
+			<li>第二行</li> 
+			<li>第三行</li> 
+			<li>第四行</li> 
+			<li>第五行</li> 
+			<li>第六行</li> 
+			<li>第七行</li> 
+			<li>第八行</li> 
+		</ol> 
+		<script> 
+			window.onload = function() { 
+				var aLi = document.getElementsByTagName('li'); 
+				for (var i=0;i<aLi.length;i++) { 
+					if(i%2==0) { 
+						aLi[i].style.background = '#ccc'; 
+					} else { 
+						aLi[i].style.background = ''; 
+					} 
+				} 
+			} 
+		</script> 
+	</body>
+</html>

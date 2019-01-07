@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>关于this</title>
+	</head>
+	<script> 
+		var User = {
+			count: 1,
+			getCount: function() {
+				return this.count;
+			}
+		};
+		console.log(User.getCount());//输出1
+		var func = User.getCount;
+		console.log(func());//输出undefined
+		//因为func是在window的上下文中被执行的，所以会访问不到count属性
+		
+		var func = User.getCount.apply(User);
+		console.log(func);//1
+		
+		var func = User.getCount.call(User);
+		console.log(func);//1
+		
+		
+		var length = 10;
+		function fn() {
+			console.log(this.length);
+		}
+		var obj = {
+			lenght: 5,
+			method: function(fn) {
+				fn();
+				arguments[0]();
+			}
+		};
+		obj.method(fn, 1);//10  2
+		//length是定义在window下，fn是在window下调用，this指向window
+		//fn被作为参数传递进来，两个参数，结果就是2
+	</script> 
+</html>
