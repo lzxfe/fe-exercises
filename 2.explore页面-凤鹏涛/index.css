@@ -1,15 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.top{
+.top {
     box-sizing: border-box;
     display: block;
     background-color: #2f363d;
     margin-top: 100px;
 }
-.flex-main{
-    list-style: none;
+.flex-main {
+    /* 批注：此样式冗余，该样式用于ul上，设置ul中li的样式使用，此处不需要 */
+    /* list-style: none; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

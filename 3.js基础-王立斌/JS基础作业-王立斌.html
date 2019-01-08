@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS基础作业</title>
+		<meta charset = "utf-8" />
+		<script type="text/javascript">
+			var charArr = new Array('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
+			var codeLength = 4;
+			var code;
+			function randomCode(){
+			    var span = document.getElementById("spanId");
+			    code = '';
+			    for(var i = 0; i < codeLength; i++){
+			    	var index = Math.floor((Math.random() * charArr.length));
+			    	code += charArr[index];
+			    }
+			    console.log(code);
+				span.innerHTML = code;
+			}
+
+			function randomCode1(){
+				window.setInterval(randomCode, 500);
+			}
+
+
+			window.onload = function(){ 
+				colorChange();
+			} 
+
+			function colorChange(){
+				var html = '';
+				html += '<ul>';
+				for(var i = 1; i < 10; i++){
+					var background = '#00F0F0;';
+					if(i % 2 == 0){
+						background = '#F0F000;';
+					}
+					html += '<li style="background:'+background+'">这是第'+i+'行</li>';
+				}
+				html += '<ul>';
+				var div = document.getElementById("colorChangeId");
+				div.innerHTML = html;
+			}
+
+			//使用set进行去重
+			function arrayUnique1(){
+				var arr = document.getElementById("repeatChar1").innerText.split(",");
+				var uniqueArr = Array.from(new Set(arr));
+				alert(uniqueArr);
+			}
+			//检测uniqueArr数组里是否包含arr数组的内容，==-1检索的字符串没有出现则为-1,然后放到uniqueArr数组内
+			function arrayUnique2(){
+				var arr = document.getElementById("repeatChar2").innerText.split(",");
+				var uniqueArr = [];
+				for(var i = 0, length = arr.length; i < length; i++){
+					if(uniqueArr.indexOf(arr[i]) == -1){
+   						uniqueArr.push(arr[i]);
+  					}				
+				}
+				alert(uniqueArr);
+			}
+			//使用includes() 方法用来判断一个数组是否包含一个指定的值，如果是返回 true，否则false。
+			function arrayUnique3(){
+				var arr = document.getElementById("repeatChar3").innerText.split(",");
+				var uniqueArr = [];
+				for(var i = 0, length = arr.length; i < length; i++){
+					if (!uniqueArr.includes(arr[i])) {
+						uniqueArr.push(arr[i]);
+					}
+				}
+				alert(uniqueArr);
+			}
+			//先排序,对arr进行排序,for循环判断arr当前值与uniqueArr最后一个值不相等时,arr当前值放入uniqueArr
+			function arrayUnique4(){
+				var arr = document.getElementById("repeatChar4").innerText.split(",");
+				arr.sort();
+				var uniqueArr = [arr[0]];//给初始值
+				for(var i = 1, length = arr.length; i < length; i++){
+					if(arr[i] !== uniqueArr[uniqueArr.length - 1]){
+						uniqueArr.push(arr[i]);
+					}
+				}
+				alert(uniqueArr);
+			}
+
+		</script>
+	</head>
+	<body>
+		<button onclick="randomCode()">生成四位数的验证码</button>
+		<span id="spanId"></span>
+		<br>
+		<button onclick="randomCode1()">setInterval</button>
+		<div id="divId"></div> 
+
+		<h1>============================</h1>
+
+		<div id="colorChangeId">
+			
+		</div>
+
+		<h1>============================</h1>
+
+		<button onclick="arrayUnique1()">数组去重方法1</button>
+		<span id="repeatChar1">1,2,2,3,1,4,6,7,6,7,a</span>
+		<br>
+		<button onclick="arrayUnique2()">数组去重方法2</button>
+		<span id="repeatChar2">1,2,2,3,1,4,6,7,6,7,a</span>
+		<br>
+		<button onclick="arrayUnique3()">数组去重方法3</button>
+		<span id="repeatChar3">1,2,2,3,1,4,6,7,6,7,a</span>
+		<br>
+		<button onclick="arrayUnique4()">数组去重方法4</button>
+		<span id="repeatChar4">1,2,2,3,1,4,6,7,6,7,a</span>
+
+		<h1>============================</h1>
+		<div>
+			var User = {											<br/>&nbsp;
+				count : 1,											<br/>&nbsp;
+				getCount : function(){								<br/>&nbsp;&nbsp;
+					return this.count;								<br/>&nbsp;
+				}													<br/>
+			};														<br/>
+			console.log(User.getCount());							<br/>
+			var func = User.getCount;								<br/>
+			console.log(func());									<br/>
+			<br/>
+			输出结果分别是 1 和 undefined, func是在window的上下文中被执行的,count和getCount是User下的,window无法访问User下的属性
+			<br/>
+			<br/>
+
+			var length = 10;                                          <br/>
+			function fn(){                                            <br/>&nbsp;
+				console.log(this.length);                             <br/>
+			}                                                         <br/>
+			var obj = {                                               <br/>&nbsp;
+			    length : 5,                                           <br/>&nbsp;
+			    method : function(fn){                          	  <br/>&nbsp;&nbsp;
+				    fn();                                             <br/>&nbsp;&nbsp;
+				    arguments[0]();                                   <br/>&nbsp;
+			    }                                                     <br/>
+			};                                                        <br/>
+			obj.method(fn, 1);                                        <br/>
+
+			输出结果分别是 10 和 2, fn()是在window上下文中,有length属性,在window下调用所以输出10;  第二个是fn作为参数传进来,this指向arguments,所以this.length获取的是参数的个数
+
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+	</body>
+</html>
