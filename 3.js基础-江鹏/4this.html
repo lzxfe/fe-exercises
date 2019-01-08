@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>this</title>
+    
+</head>
+	<script type="text/javascript">
+	//不知道理解的对不对，还请老师们指正。
+	 var User={
+		count:1,
+		getCount:function(){
+			return this.count;
+		}
+	 };
+	 console.log(User.getCount())//what : 1,why : 方法调用中谁调用this指向谁,指向User调用指向User。
+	 var func=User.getCount;
+	 console.log(func());//what : undefined,why : 方法调用中谁调用this指向谁,func()等价于window.func()。指向window，window下没有count这个变量。
+    </script>
+<body>
+</body>
+
+</html>

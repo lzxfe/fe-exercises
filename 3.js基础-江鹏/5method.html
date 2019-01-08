@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>method</title>
+    
+</head>
+	<script type="text/javascript">
+	//不知道理解的对不对，还请老师们指正。
+	var length = 10;
+	function fn(){
+		console.log(this.length);
+	}
+	var obj = {
+		length:5,
+		method:function(fn){
+			fn();
+			arguments[0]();
+		}
+	};
+	obj.method(fn,1);//10,2 
+	//先走fn，fn表示window.fn。fn输出this.length=10，arguments[0]()，，，，额 说不下去了，我也不知道为啥是2，哈哈，请赵老师指导。
+    </script>
+<body>
+</body>
+
+</html>

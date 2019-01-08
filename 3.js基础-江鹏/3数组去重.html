@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数组去重</title>
+    
+</head>
+	<script type="text/javascript">
+	 var arr=new Array("AAA","BBB","CCC","CCC","AAA");
+	 
+	 //1
+	 function test1(arr){
+	  var newarr=[];
+	  for (var i = 0; i < arr.length; i++) {
+		 if(newarr.indexOf(arr[i])==-1){
+		  newarr.push(arr[i]);
+		 }
+	  }
+	  return newarr;
+	}
+	console.log(test1(arr));
+	
+	//2
+	function test2(arr){
+		var newarr = [];
+		for (var i = 0; i < arr.length; i++) {
+			var reparr = [];
+			for (var j = i + 1; j < arr.length; j++) {
+				if (arr[i] == arr[j]) {
+					reparr.push(j);
+				}
+			}
+			if (reparr.length == 0) {
+				newarr.push(arr[i]);
+			}
+		}
+		return newarr;
+	}
+	console.log(test2(arr));
+	
+	//3
+	Array.prototype.test3 = function(){
+    var newarr = [];
+    for(var i = 0; i < this.length; i++){
+         if(newarr.indexOf(this[i])== -1){
+             newarr.push(this[i]);
+         }
+     }
+	return newarr;
+	}
+	console.log(arr.test3());
+	
+    </script>
+<body>
+</body>
+
+</html>
