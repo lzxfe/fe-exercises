@@ -1,0 +1,76 @@
+/*批注：不要滥用!important，!important是为了增加权重，非到万不得己不要用*/
+#part10 {
+    margin-top:20px;
+    background:black;
+    width:100%;
+    display: flex;
+    /*批注: flex-direction属性的值默认为row*/
+    /*flex-direction: row;*/
+    align-items: center;
+    height: 350px;
+}
+#div1-1 {
+    display: flex;
+    width:25%;
+    cursor:pointer;
+}
+#div1-3{
+    display: flex;
+    width:25%;
+    margin-right:20px;
+    cursor:pointer;
+}
+#div1-2 {
+    display: flex;
+    width:50%;
+    cursor:pointer;
+}
+.width-fit {
+    max-width: 100%;
+    border-radius:3px;
+}
+.box {
+    height:260px;
+    margin-left:15px;
+}
+.box img {
+    cursor: pointer;
+    transition: all 0.6s;
+}
+.box :hover {
+    transform: scale(1.04,1.04);
+}
+#part2 {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.part2-2 {
+    /*批注: padding属性用于设置内边距，可简写*/
+    padding: 0 16px;
+    /*padding-left: 16px;*/
+    /*padding-right: 16px;*/
+    overflow: auto;
+}
+.d-sm-flex {
+    align-items: center;
+    justify-content: space-between;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+}
+.d-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.art2{
+    margin-left:10px;
+    margin-right:10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #e1e4e8;
+    min-width:300px;
+    height:200px;
+}
