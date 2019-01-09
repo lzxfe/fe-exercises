@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta charset="utf-8"/> 
+</head>
+<script type="text/javascript">
+	var array = [3,4,24,30,3,2,4,3,2,6,1,2,7,8,9,1,1,9];
+	console.log('array',array);
+		var arr2 = [];
+			for(var i=0;i<array.length;i++){
+				if(arr2.indexOf(array[i])==-1){
+					arr2.push(array[i]);
+				}
+			}
+			console.log('arr2',arr2);
+	
+		var arr3 = [];
+		var strArr = array.join(',');
+		arr3 = strArr.split(',');
+		var len = array.length;
+		for(var i=0;i<len;i++){
+			for(var j=i+1;j<len;j++){
+				if(arr3[i]==arr3[j]){
+					arr3.splice(j,1);
+					j--;
+					len--;
+				}
+			}
+			
+		}
+		console.log('arr3',arr3);
+		
+		var arr4 = [];
+		var strArr2 = array.join(',');
+		arr4 = strArr2.split(',');
+		var len2 = arr4.length;
+		for(var k=0;k<len2;k++){
+			if(arr4.indexOf(arr4[k])!=k){
+				arr4.splice(k,1);
+				k--;
+				len2--;
+			}
+			
+		}
+		console.log('arr4',arr4);
+		
+		
+</script>
+<body>
+<div>
+
+</div>
+</body>
+</html>
