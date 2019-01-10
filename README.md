@@ -24,8 +24,8 @@
 | 提交者 | 提交日期   | 批改者 | 批改日期   | 批改结果                                                                                                     |
 |------|------------|------|------------|--------------------------------------------------------------------------------------------------------------|
 | 江鹏   | 2018-12-24 | 谢方立 | 2018-12-25 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/1c47bc0d382bc6c98f60ebe4f352b8cb80f65156?diff=split) |
-| 王立斌 | 2018-12-25 | 赵慧洋 | 2018-12-25 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/991fb248ec926e9c1ad0f4f203e0f9dae8ae2424?diff=split) |
-| 王现玉 | 2018-12-25 | 谢强   | 2018-12-25 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/ec621244e881bcb99034abc3bdb5600c7cc92c26?diff=split) |
+| 王立斌 | 2018-12-25 | 赵慧洋 | 2018-12-25 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/a2b131686bb800648391991bf40ca7ee12ea0d26?diff=split) |
+| 王现玉 | 2018-12-25 | 谢强   | 2018-12-25 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/991fb248ec926e9c1ad0f4f203e0f9dae8ae2424?diff=split) |
 | 凤鹏涛 | 2018-12-25 | 赵慧洋 | 2018-12-25 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/ec621244e881bcb99034abc3bdb5600c7cc92c26?diff=split) |
 | 王文军 | 2018-12-28 | 贾双喜 | 2019-01-02 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/0cd9f31cdc31cc873d0bb57615ac0cb2e99ba04f?diff=split) |
 | 王江涛 | 2019-01-03 | 贾双喜 | 2019-01-04 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/ffa5145a57782987efef690ed1f6e38e19e66a2d?diff=split) |
