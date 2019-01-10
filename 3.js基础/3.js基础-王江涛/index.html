@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<script type="text/javascript">
+		//1、生成四位数的验证码---> 验证码要求由 0-9 .a-z A-Z组成
+		var ss="";
+		var arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+		for (var i=0;i<4;i++){
+			var num = Math.random()*arr.length;
+		    ss+=arr[Math.ceil(num)];
+		};
+		console.log(ss);
+		//数组去重1
+		var arr1 = ['0', '1', '2', '3', '3', '4', '4'];
+        var newArr=[];
+        for (var i=0;i<arr1.length;i++){
+	        if(newArr.indexOf(arr1[i])<0){
+	        newArr.push(arr1[i]);
+	        };
+        };
+        console.log(newArr);
+		
+		//数组去重2
+		var arr2 = ['0', '1', '2', '3', '3', '4', '4'];
+        var newArr=[];
+        for (var i=0;i<arr2.length;i++){
+			var num=arr2.indexOf(arr2[i]);
+	        if(num!=i){
+	        arr2.splice(num,1);
+			i--;
+	        };
+        };
+        console.log(arr2);
+		
+		//数组去重3
+		var arr3 = ['0', '1', '2', '3', '3', '4', '4'];
+        var newArr3=[];
+        for (var i=0;i<arr3.length;i++){
+	        if(!newArr3.includes(arr3[i])){
+	        newArr3.push(arr3[i]);
+	        };
+        };
+        console.log(newArr3);
+		
+		//数组去重4
+		var arr4 = ['0', '1', '2', '3', '3', '4', '4'];
+		arr4.sort();
+        for (var i=0;i<arr4.length;i++){
+	        if(arr4[i]==arr4[i+1]){
+	        arr4.splice(i+1,1);
+			i--;
+	        };
+        };
+        console.log(arr4);
+		
+		
+		var len=10;
+		function fn(){
+			console.log(this.len);
+		}
+		var obj = {
+			len:5,
+			method:function(fn){
+				fn();
+				arguments[0]();
+			}
+		}
+		obj.method(fn,1);
+		//第四题
+		//1、第一个是1；第二个是undefind；原因：this是指调用者，第一个调用者是user,第二个调用者是window，window并没有定义count
+		//2、length为10 原因：fn的调用者是window，所以打印的是fn的作用域的参数，也就是全局的length
+		</script>
+</head>
+<body>
+	<ul>
+		<li>第1行</li>
+		<li>第2行</li>
+		<li>第3行</li>
+		<li>第4行</li>
+		<li>第5行</li>
+		<li>第6行</li>
+		<li>第7行</li>
+		<li>第8行</li>
+		<li>第9行</li>
+		<li>第10行</li>
+	</ul>
+</body>
+<script type="text/javascript">
+		var liArr= document.getElementsByTagName("li");
+		for (var i=0;i<liArr.length;i++){
+			if(i%2==0){
+				liArr[i].style.background='orange'
+			}else{
+				liArr[i].style.background='gray'
+			};
+		};
+</script>
+</html>
+
+
+
