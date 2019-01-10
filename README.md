@@ -20,7 +20,7 @@
 <br/>
 
 
-#### 作业3：js基础练习
+#### :three: 作业3：js基础练习
 
 提交者：
 王文军;凤鹏涛;王立斌;王现玉;荣贝贝;江鹏;林强;
@@ -28,7 +28,7 @@
 <br/>
 
 
-#### 作业2：切一个github的explore页面
+#### :two: 作业2：切一个github的explore页面
 
 
 > 作业要求：
@@ -39,7 +39,7 @@
 
 提交者：
 凤鹏涛; 
-王现玉 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/d4a0b8c3260c50586c27384adf2c2ace7940a4be?diff=split); 
+王现玉 [[批改结果 :+1:]](https://github.com/lzxfe/fe-exercises/commit/d4a0b8c3260c50586c27384adf2c2ace7940a4be?diff=split); 
 王立斌 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/4664141bdc20de0024b99e6276c088ce6f1d2ffe?diff=split); 
 江鹏; 
 荣贝贝 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/f35c6b151361fe16c6b6bf0d6af072e32564bd7a?diff=split); 
@@ -53,7 +53,7 @@
 
 <br/>
 
-#### 作业1：切一个百度首页
+#### :one:  作业1：切一个百度首页
 
 提交者：
 江鹏 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/1c47bc0d382bc6c98f60ebe4f352b8cb80f65156?diff=split);
