@@ -38,8 +38,18 @@
 
 
 提交者：
-凤鹏涛; 王现玉; 王立斌; 江鹏; 荣贝贝; 王江涛; 孔博阳; 张开良; 林强; 王文军;
-林强 江鹏 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/d71b95340488b93c7f45613cdb215df698797b3f?diff=split);
+凤鹏涛; 
+王现玉 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/d4a0b8c3260c50586c27384adf2c2ace7940a4be?diff=split); 
+王立斌 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/4664141bdc20de0024b99e6276c088ce6f1d2ffe?diff=split); 
+江鹏; 
+荣贝贝 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/f35c6b151361fe16c6b6bf0d6af072e32564bd7a?diff=split); 
+王江涛; 
+孔博阳; 
+张开良; 
+林强; 
+王文军;
+林强;
+江鹏 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/d71b95340488b93c7f45613cdb215df698797b3f?diff=split);
 
 <br/>
 
@@ -55,9 +65,6 @@
 荣贝贝 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/71b4e9a12a2d38cc7cb37b1a89f897ff3993fc75?diff=split);
 张开良 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/30bbb45407a2e9199b41eae43d836b0fe2a2a18e?diff=split);
 孔博阳 [[批改结果]](https://github.com/lzxfe/fe-exercises/commit/3730a692baaf575f921df3faf8b1b46ab8546c36?diff=split);
-
-
-林强; 王江涛; 荣贝贝
 
 <br/>
 
