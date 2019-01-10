@@ -32,7 +32,7 @@
 | 荣贝贝 | 2019-01-03 | 贾双喜 | 2019-01-04 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/71b4e9a12a2d38cc7cb37b1a89f897ff3993fc75?diff=split) |
 | 张开良 | 2019-01-03 | 谢强   | 2019-01-07 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/30bbb45407a2e9199b41eae43d836b0fe2a2a18e?diff=split) |
 | 孔博阳 | 2019-01-03 | 谢强   | 2019-01-07 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/3730a692baaf575f921df3faf8b1b46ab8546c36?diff=split) |
-| 林强   | 2019-01-03 | 谢方立 | --         | --                                                                                                           |
+| 林强   | 2019-01-03 | 谢方立 | 2019-01-10 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/fc1b495a4c2849f15681d61202c7dafe902af1fd?diff=split)  |
 
 
 <br/>
