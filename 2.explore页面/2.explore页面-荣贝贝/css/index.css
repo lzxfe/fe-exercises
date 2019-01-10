@@ -36,18 +36,17 @@ header{
 #title-1{
 	margin-top:20px;
 }
-h2{
-	    -webkit-margin-start: 200px;
+.github-main {
+	width: 1280px;
+	margin: 0 auto;
 }
-main{
-	width: 100%;
-    display: flex;
-	justify-content:center;
+.main-wrapper {
+	position: relative;
 }
 .main-box{
-	width: 1200px;
-	display:-webkit-inline-box;
 	overflow-x: auto;
+	display: flex;
+	justify-content:center;
 }
 .main-block{
 	max-width:220px;
@@ -55,6 +54,7 @@ main{
 	border:1px lightgrey solid;
 	border-radius:5px;
 	margin:20px;
+	flex-shrink: 0;
 }
 .main-block::first-line{
 	font-size:20px;
@@ -64,15 +64,17 @@ main{
 }
 .shadow-left{
 	background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+	left: 0;
 }
 .shadow-right{
 	background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
-	margin-left:1100px;
+	right: 0;
 }
 .shadow{
-    height: 280px;
     width: 100px;
-    position: absolute;
+		position: absolute;
+		top: 0;
+		bottom: 0;
 }
 		
 	
