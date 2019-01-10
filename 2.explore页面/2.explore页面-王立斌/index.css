@@ -42,24 +42,19 @@ html, body{
 }
 
 .collection{
-    width: 90%;
-    height: 40%;
-    background: #ffffff;
-    float: left;
-    display: -webkit-inline-box;
-    overflow-x:auto;
-    margin: auto;
-    position: absolute;
-    left: 0;
-    right: 0; 
+    background: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
 }
 
 .flex-item{
-    height: 236;
+    height: 236px;
     width: 264px;
     margin: 10px;
     border-radius: 4px;
     border: 1px solid #E9EBEE;
+    flex-shrink: 0;
 }
 .div-h1{
 	color: #0366d6;
