@@ -130,7 +130,6 @@ div {
     width: 1000px;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 370px;
 
 }
 .btn{
@@ -148,16 +147,16 @@ div {
     font-weight: normal;
 }
 #input-id{
-position: relative;
+    position: relative;
     width: 500px;
     width: 526px;
-    height: 22px;
+    height: 36px;
     line-height: 22px;
-    margin: 6px 0 0 7px;
-    padding: 0;
+    padding: 4px;
     background: transparent;
     border: 0;
     outline: 0;
+    box-sizing: border-box;
 }
 .main-search{
 	width: 643px;
@@ -170,20 +169,23 @@ position: relative;
 }
 #search-span{
     width: 521px;
-    height: 20px;
-    padding: 9px 7px;
     border: 1px solid #b8b8b8;
     border-bottom: 1px solid #ccc;
     border-right: 0;
     vertical-align: top;
     outline: none;
     box-shadow: none;
-	position:relative;
+    position:relative;
+    box-sizing: border-box;
 }
 .baudu-footer{
     list-style: none;
 	text-align: center;
-	color: #999;
+    color: #999;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
 }
 .baudu-footer-code{
     height: 90px;
