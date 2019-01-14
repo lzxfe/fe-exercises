@@ -6,6 +6,8 @@
 </head>
 <script type="text/javascript">
 function code(){
+	// 批注：可直接定义一个字符源
+	// var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
 	var arr=[];
 	for(var i=0;i<10;i++){  
 		arr.push(i);//输出0-9
@@ -46,16 +48,18 @@ function removeRepEle01(){
 			arr2.push(arr[i]);
 		}
 	}
-	var str='';
-	for(var i=0;i<arr2.length;i++){
-		str+=arr2[i]+' ';
-	}
+	// 批注: 数组arr2跟字符串拼接时，会自动条用toString()方法转为字符串，数组各元素用逗号连接; 或者直接使用arr2.join('')转为字符串
+	var str=arr2.join('');
+	// for(var i=0;i<arr2.length;i++){
+	// 	str+=arr2[i]+' ';
+	// }
 	document.getElementById('arrValue01').innerText = str+"(用另一个数组替换原数组)";
 }
 function removeRepEle02(){
 	var arr=['1','2','2','3','5','6'];
 	var obj={};
 	var str='';
+	// 批注： 可使用 Object.keys(obj)来获取对象的属性列表
 	for(var i=0;i<arr.length;i++){
 		if(!obj[arr[i]]){
 			str+=arr[i]+' ';
@@ -70,11 +74,12 @@ function removeRepEle03(){
 	  var arr2 = arr.filter(function(element,index,self){
 	     return self.indexOf(element) === index;
 	  });
-	  var str='';
-	for(var i=0;i<arr2.length;i++){
-		str+=arr2[i]+' ';
-	}
-	document.getElementById('arrValue03').innerText = str+"(利用数组中的filter方法)";
+
+	//   var str='';
+	// for(var i=0;i<arr2.length;i++){
+	// 	str+=arr2[i]+' ';
+	// }
+	document.getElementById('arrValue03').innerText = arr2+"(利用数组中的filter方法)";
 }
 function test401(){
 	var User={
@@ -111,6 +116,6 @@ function test401(){
 
 <h3>4、关于this </h3>
 <div>第一题：1(指向当前user对象)   undefined(指向window对象)</div>
-<div>第二题：10(这个应该就是window的对象的变量length值10)   2(方法的第一个参数的长度，第二个参数没用)</div>
+<div>第二题：10(这个应该就是window的对象的变量length值10)   5(方法的第一个参数的长度，第二个参数没用)</div>
 </body>
 </html>
