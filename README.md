@@ -48,7 +48,7 @@
 
 | 提交者 | 提交日期   | 批改者 | 批改日期   | 批改结果                                                                                                           |
 |------|------------|------|------------|--------------------------------------------------------------------------------------------------------------------|
-| 凤鹏涛 | 2019-01-02 | 赵慧洋 | 2019-01-15  | [点击查看]    (https://github.com/lzxfe/fe-exercises/commit/b42ec0d2f0e0b0516f224c6dbb4fd12de405e288?diff=split)       |
+| 凤鹏涛  | 2019-01-02 | 赵慧洋 | 2019-01-15 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/b42ec0d2f0e0b0516f224c6dbb4fd12de405e288?diff=split)       |
 | 江鹏   | 2019-01-02 | 贾双喜 | 2019-01-04 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/d71b95340488b93c7f45613cdb215df698797b3f?diff=split)       |
 | 王现玉 | 2019-01-02 | 谢方立 | 2019-01-10 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/d4a0b8c3260c50586c27384adf2c2ace7940a4be?diff=split)  :+1: |
 | 王立斌 | 2019-01-03 | 谢方立 | 2019-01-10 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/4664141bdc20de0024b99e6276c088ce6f1d2ffe?diff=split)       |
