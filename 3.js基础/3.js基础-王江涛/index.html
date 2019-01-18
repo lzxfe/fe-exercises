@@ -6,9 +6,11 @@
 <script type="text/javascript">
 		//1、生成四位数的验证码---> 验证码要求由 0-9 .a-z A-Z组成
 		var ss="";
+		// 批注：可直接定义一个字符源 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
 		var arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 		for (var i=0;i<4;i++){
 			var num = Math.random()*arr.length;
+			// 批注：此处应该用 Math.floor(num)。Math.ceil(0.1) = 1, 导致永远取不到第一个字符串 '0'
 		    ss+=arr[Math.ceil(num)];
 		};
 		console.log(ss);
@@ -22,6 +24,7 @@
         };
         console.log(newArr);
 		
+		// 批注: 不建议这种做法。既然改变了原数组，就不要再使用indexOf来获取位置。容易出错。
 		//数组去重2
 		var arr2 = ['0', '1', '2', '3', '3', '4', '4'];
         var newArr=[];
@@ -63,11 +66,12 @@
 		var obj = {
 			len:5,
 			method:function(fn){
-				fn();
-				arguments[0]();
+				fn(); // 10
+				arguments[0](); // undefined
 			}
 		}
 		obj.method(fn,1);
+		// 批注: 注释意思不清楚
 		//第四题
 		//1、第一个是1；第二个是undefind；原因：this是指调用者，第一个调用者是user,第二个调用者是window，window并没有定义count
 		//2、length为10 原因：fn的调用者是window，所以打印的是fn的作用域的参数，也就是全局的length
