@@ -70,7 +70,7 @@
 | 凤鹏涛 | 2019-01-05 | 谢方立 | 2019-01-14 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/7c685851e19c52d1e3678a710f451eea612e2d1d?diff=split) |
 | 王现玉 | 2019-01-07 | 贾双喜 | --         | --                                                                                                           |
 | 王立斌 | 2019-01-08 | 谢强   | --         | --                                                                                                           |
-| 荣贝贝 | 2019-01-08 | 赵慧洋 | --         | --                                                                                                           |
+| 荣贝贝 | 2019-01-08 | 赵慧洋 | 2019-01-20 |  [点击查看](https://github.com/lzxfe/fe-exercises/commit/77aad32e1a3d6569535074c4f43233d0fb673096?diff=split)  :+1: |
 | 江鹏   | 2019-01-08 | 谢强   | --         | --                                                                                                           |
 | 林强   | 2019-01-09 | --     | --         | --                                                                                                           |
 | 王江涛 | 2019-01-10 | 谢方立 | 2019-01-18 | [点击查看](https://github.com/lzxfe/fe-exercises/commit/10ad7c8bd33166fe6d9ea542d4acc5041761d9fa?diff=split) |
