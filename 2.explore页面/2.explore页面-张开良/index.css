@@ -1,15 +1,22 @@
+/* 批注：
+		好的地方：1. 页面实现效果还行; 2. flex用法正确;  3. 布局正确
+		有待改进：1. 页面class命名混乱; 2. 注意对于块级元素，display:block是默认值; 3. 建议看一下引入css的三种方式导致的css样式的权重问题
+*/
+
 *{
     margin: 0;
     padding: 0;
 }
 .top{
     box-sizing: border-box;
-    display: block;
+    /* 批注：此样式冗余，div的display默认为block */
+    /* display: block; */
     background-color: #2f363d;
     margin-top: 100px;
 }
 .flex-main{
-    list-style: none;
+    /* 批注：此样式冗余，该样式用于ul上，设置ul中li的样式使用，此处不需要 */
+    /* list-style: none; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -95,7 +102,17 @@
     -o-transform: scale(1.03);
     -ms-transform: scale(1.03);
     border-radius: 0px;
+    /* 批注：加上transition，可达到鼠标移入的渐变效果 */
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
 }
+
+/* 批注：加上transition，可达到鼠标移出渐变效果 */
+.flex-item img {
+    transition: transform .3s;
+}
+
 .bottom{
     margin: 20px auto;
     max-width: 1280px;
